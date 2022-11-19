@@ -12,10 +12,10 @@
 
 </head>
 <body>
-  <div class="container">
+  <div class="container row">
     <div class="card">
-      <h1>Register Form</h1>
-      <form action="">
+      <h1 class="title" id="title">Register Form</h1>
+      <form class="submit-form" id="form" >
         <div class="form-control">
           <label for="username">username</label>
           <input type="text" 
@@ -46,8 +46,8 @@
         <div class="form-control">
           <label for="password">Password</label>
           <input type="password" 
-          id="password"
-          name="password" placeholder="enter your password">
+          id="new-password"
+          name="new-password" placeholder="enter your password">
           <small>password is required</small>
           
         </div>
@@ -61,7 +61,7 @@
           
         </div>
 
-        <button class="btn btn-light btn-block">Submit</button>
+        <button class="btn btn-light btn-block" type="submit">Submit</button>
       </form>
     </div>
     
