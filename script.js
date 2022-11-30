@@ -40,7 +40,7 @@ const checklenght = function (el,min,max){
 formEl.addEventListener('submit',(e)=>{
 e.preventDefault();
 checkRequriedInput(inputElArrays);
-checklenght(usernameEl,5,8);
+checklenght(mobileEl,5,8);
 }
 );
 
