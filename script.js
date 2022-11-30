@@ -21,8 +21,27 @@ if(el.value ===''){
 }
 }
 }
-formEl.addEventListener('submit',(e)=>{e.preventDefault();
-checkRequriedInput(inputElArrays);}
+const checklenght = function (el,min,max){
+  if (el.value.lenght < min){
+    const formControlEl=el.parentElement;
+    formControlEl.classList = 'form-control error';
+    const smallEl = formControlEl.querySelector('small');
+    smallEl.textContent = `should not be less than ${min} sdfdf `;
+
+  }else if (el.value.lenght < min){
+    const formControlEl=el.parentElement;
+    formControlEl.classList= 'form-Control error';
+    const smallEl = formControl.querySelector('small');
+    smallEl.textcontent=`should not exceed more than the ${min} `;
+  }
+};
+
+
+formEl.addEventListener('submit',(e)=>{
+e.preventDefault();
+checkRequriedInput(inputElArrays);
+checklenght(usernameEl,5,8);
+}
 );
 
 
